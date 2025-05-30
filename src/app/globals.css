@@ -1,26 +1,97 @@
+/* Impor Tailwind CSS */
 @import "tailwindcss";
 
+
+/* Bagian setting Fonts */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/fonts/helvetica.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/fonts/coolvetica.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Variabel CSS untuk tema */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --darkblue: #1c66c9;
+  --font-paragraph: 'Helvetica', helvetica, arial, sans-serif;
+  --font-tittle: 'Coolvetica', helvetica, arial, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Styling dasar untuk body */
+@layer base {
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-paragraph);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Kustomisasi warna Tailwind */
+@layer utilities {
+  .bg-background {
+    background-color: var(--background);
+  }
+  .bg-darkblue {
+    background-color: var(--darkblue);
+  }
+  .text-darkblue {
+      background: linear-gradient(147deg, rgba(44, 166, 233, 1) 0%, #1c66c9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  .glassmorph {
+      background: linear-gradient(234deg, rgba(255, 255, 255, 0.226) 0%, rgba(255, 255, 255, 0.089) 100%);
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 8px ) brightness(1.5);
+      -webkit-backdrop-filter: blur( 8px );
+      border-radius: 10px;
+      padding: 5px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+}
+/* styles/global.css */
+@keyframes float-wind {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+}
+
+.animate-float-wind {
+  animation: float-wind 3s ease-in-out infinite;
+}
+
+.parallax {
+  transform: translateY(0);
+  will-change: transform;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+
+.fixed.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
