@@ -45,6 +45,10 @@
   .bg-darkblue {
     background-color: var(--darkblue);
   }
+  .bg-gradient-darkblue {
+    background: #2CA6E9;
+    background: linear-gradient(355deg, rgba(44, 166, 233, 1) 0%, rgba(28, 102, 201, 1) 46%);
+  }
   .text-darkblue {
       background: linear-gradient(147deg, rgba(44, 166, 233, 1) 0%, #1c66c9 100%);
       -webkit-background-clip: text;
@@ -52,14 +56,17 @@
   }
   .glassmorph {
       background: linear-gradient(234deg, rgba(255, 255, 255, 0.226) 0%, rgba(255, 255, 255, 0.089) 100%);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-      backdrop-filter: blur( 8px ) brightness(1.5);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.027);
+      backdrop-filter: blur( 15px );
       -webkit-backdrop-filter: blur( 8px );
-      border-radius: 10px;
-      padding: 5px;
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.589);
+  }
+  .font-tittle{
+    font-family: var(--font-tittle);
   }
 
+/* ? Animasi */
 }
 /* styles/global.css */
 @keyframes float-wind {
@@ -73,16 +80,34 @@
     transform: translateY(0) rotate(-2deg);
   }
 }
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
+.animate-scroll-x {
+  display: flex;
+  animation: scroll-x 45s linear infinite;
+  will-change: transform; /* Optimizes animation performance */
+  width: max-content; /* Ensures the container fits all content tightly */
+}
+
+/* Pause animation on hover (optional) */
+.animate-scroll-x:hover {
+  animation-play-state: paused;
+}
 .animate-float-wind {
   animation: float-wind 3s ease-in-out infinite;
 }
-
 .parallax {
   transform: translateY(0);
   will-change: transform;
 }
-
+/* security */
 img {
   -webkit-user-drag: none;
   user-select: none;
