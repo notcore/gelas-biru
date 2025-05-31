@@ -36,7 +36,7 @@ const Section4 = () => {
               <h2 className=" text-md text-white mx-20 text-center md:text-3xl mb-6"> lebih dari 1 tahun saya <br /> belajar dan menguasai software yang saya sukai</h2>
             </div>
             <div className="">
-            <div className="flex gap-2 w-max animate-scroll-x">
+            <div className="flex gap-2 justify-center items-center w-max animate-scroll-x">
               {apps.map((app) => (
                 <Glass
                   key={app.id} 
