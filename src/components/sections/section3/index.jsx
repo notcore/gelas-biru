@@ -31,7 +31,7 @@ const timelineData = [
 const Section3 = () => {
     return (
         <div className="bg-gradient-darkblue relative  flex justify-center items-center min-h-screen">
-          <div className="flex flex-col gap-6 mx-10  md:-mt-0">
+          <div className="flex flex-col gap-6 mx-10 md:mt-[200px] mb-10">
             {timelineData.map((item, index) => (
               <div
                 key={index}
