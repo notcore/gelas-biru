@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="flex justify-center min-h-screen">
       <Navbar />
-       <div className="mt-20">
+       <div className="mt-20 overflow-hidden w-screen">
         <Section1/> 
         <Section2/> 
         <Footer />

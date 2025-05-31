@@ -1,6 +1,6 @@
 /* Impor Tailwind CSS */
 @import "tailwindcss";
-
+/* ================================================================== */
 /* Bagian setting Fonts */
 @font-face {
   font-family: 'Helvetica';
@@ -16,7 +16,7 @@
   font-style: normal;
   font-display: swap;
 }
-
+/* =================================================================== */
 
 /* Variabel CSS untuk tema */
 :root {
@@ -26,7 +26,7 @@
   --font-tittle: 'Coolvetica', helvetica, arial, sans-serif;
 }
 
-/* Styling dasar untuk body */
+/* style dasar body */
 @layer base {
   body {
     margin: 0;
@@ -36,7 +36,7 @@
   }
 }
 
-/* Kustomisasi warna Tailwind */
+/* costume warna Tailwind */
 @layer utilities {
   .bg-background {
     background-color: var(--background);
@@ -47,6 +47,10 @@
   .bg-gradient-darkblue {
     background: #2CA6E9;
     background: linear-gradient(355deg, rgba(44, 166, 233, 1) 0%, rgba(28, 102, 201, 1) 46%);
+  }
+  .bg-transparant-blue {
+    background: #2CA6E9;
+    background: linear-gradient(355deg, #2ca6e9 0%, #1c66c9 46%);
   }
   .bg-gradient-bluedark {
     background: #2CA6E9;
@@ -73,6 +77,17 @@
 /* ? Animasi */
 }
 /* styles/global.css */
+@theme {
+  --animate-shine: shine 3s linear infinite;
+}
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
 @keyframes float-wind {
   0% {
     transform: translateY(0) rotate(0deg);
