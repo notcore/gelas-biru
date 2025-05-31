@@ -2,39 +2,38 @@ import React from 'react';
 import Glass from '@/components/elements/Glass'; 
 
 const InfiniteScroll = () => {
-  // Define the content array to make it easier to duplicate
+  // ! JANGAN DIHAPUS INI BAGIAN PATHNYA
+    const path = "/resource/img/";
+// ==============================================================
+  // taruh gambarnya disni bagian "source" samping ${path} bang,
+  //  gak usah susah" costume codinganya.
+  // usahain format webp biar gak berat.
   const items = [
-    { id: 1, text: 'Text 1' },
-    { id: 2, text: 'Text 2' },
-    { id: 3, text: 'Text 3' },
-    { id: 4, text: 'Text 4' },
-    { id: 5, text: 'Text 5' },
-    { id: 6, text: 'Text 6' },
+    { id: 1, source: `${path}gambar1.jpeg` },
+    { id: 2, source: `${path}gambar2.jpeg` },
+    { id: 3, source: `${path}gambar3.jpeg` },
+    // kalo mau tambah copy aja { id: ... } terus ganti idnya
   ];
+// ===============================================================
 
+// kalo mau costume style disini tapi ini bukan satu-satunya belum ke inti.
   return (
     <div className="relative overflow-hidden mt-16">
       <div className="flex animate-scroll-x">
-       
         {items.map((item) => (
-          <Glass key={`original-${item.id}`} className="w-[150px] md:w-[450px] md:h-[400px] h-[100px]  mx-1.5">
-            {item.text}
-          </Glass>
+          <Glass key={`original-${item.id}`} source={`${item.source}`} className="mx-1" />
         ))}
         {items.map((item) => (
-          <Glass key={`duplicate-${item.id}`} className="w-[150px] md:w-[450px] md:h-[400px] h-[100px]  mx-1.5">
-            {item.text}
-          </Glass>
+          <Glass key={`original-${item.id}`} source={`${item.source}`} className="mx-1" />
         ))}
         {items.map((item) => (
-          <Glass key={`duplicate-${item.id}`} className="w-[150px] md:w-[450px] md:h-[400px] h-[100px]  mx-1.5">
-            {item.text}
-          </Glass>
+          <Glass key={`duplicate-${item.id}`} source={`${item.source}`} className="mx-1" />
         ))}
         {items.map((item) => (
-          <Glass key={`duplicate-${item.id}`} className="w-[150px] md:w-[450px] md:h-[400px] h-[100px]  mx-1.5">
-            {item.text}
-          </Glass>
+          <Glass key={`duplicate-${item.id}`} source={`${item.source}`} className="mx-1" />
+        ))}
+        {items.map((item) => (
+          <Glass key={`duplicate-${item.id}`} source={`${item.source}`} className="mx-1" />
         ))}
       </div>
     </div>

@@ -1,3 +1,5 @@
+//! BAGIAN SINI JANGAN DI UBAH
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 

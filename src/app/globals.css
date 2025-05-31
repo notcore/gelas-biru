@@ -1,7 +1,6 @@
 /* Impor Tailwind CSS */
 @import "tailwindcss";
 
-
 /* Bagian setting Fonts */
 @font-face {
   font-family: 'Helvetica';
@@ -62,6 +61,7 @@
       border-radius: 6px;
       border: 1px solid rgba(255, 255, 255, 0.589);
   }
+  
   .font-tittle{
     font-family: var(--font-tittle);
   }
@@ -120,3 +120,6 @@ img {
   background-position: center;
   background-size: cover;
 }
+
+/* book area */
+
