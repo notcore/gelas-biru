@@ -35,6 +35,12 @@ const InfiniteScroll = () => {
         {items.map((item) => (
           <Glass key={`duplicate-${item.id}`} source={`${item.source}`} className="mx-1" />
         ))}
+        {items.map((item) => (
+          <Glass key={`duplicate-${item.id}`} source={`${item.source}`} className="mx-1" />
+        ))}
+        {items.map((item) => (
+          <Glass key={`duplicate-${item.id}`} source={`${item.source}`} className="mx-1" />
+        ))}
       </div>
     </div>
   );

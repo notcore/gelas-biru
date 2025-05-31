@@ -16,7 +16,7 @@ const Section1 = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    
+
 // ===============================================================================================
     // tiati kalo costume ntar biasanya ngerusak margin padding💀
 // ===============================================================================================
@@ -27,7 +27,7 @@ const Section1 = () => {
             <div className="relative flex justify-center mt-10">
                 <img src="/resource/background/background-atas.svg" />
                 <img className="absolute z-10 md:max-w-[600px] md:mt-[10%] mt-12" src="/resource/background/shape-lancip.svg" />
-                <img className="absolute animate-float-wind mt-40 z-20 md:mt-[20%] max-w-[300px] sm:max-w-[650px] md:w-[650px]" src="/resource/background/background-video.svg" />
+                <img className="absolute animate-float-wind mt-40 z-20 md:mt-[20%] max-w-[300px] sm:max-w-[550px] md:w-[650px]" src="/resource/background/background-video.svg" />
             </div>
         </>
     )
