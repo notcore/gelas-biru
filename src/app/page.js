@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Navbar from "@/components/template/Navbar";
 import Section2 from "@/components/sections/section2";
 import Section1 from "@/components/sections/section1";
+import Section3 from "@/components/sections/section3";
 import Footer from "@/components/template/footer"
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
        <div className="mt-20 overflow-hidden w-screen">
         <Section1/> 
         <Section2/> 
+        <Section3/> 
         <Footer />
       </div>
     </div>
