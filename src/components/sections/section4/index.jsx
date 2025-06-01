@@ -42,7 +42,7 @@ const apps = [
 
 const Section4 = () => {
     return (
-        <div id="skill" className=" relative grid place-items-center place-content-center py-12 px-5">
+        <div id="skill" className="md:mt-40 relative grid place-items-center place-content-center py-12 px-5">
           <div className="relative grid place-items-center z-20">
               <img className="max-w-[400px] md:w-[600px] md:max-w-[600px] mx-auto" src="/resource/tittle/software.svg" />
               <h2 className=" text-md text-white mx-20 text-center md:text-3xl mb-6">{paragraph}</h2>
