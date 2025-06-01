@@ -42,7 +42,7 @@ const timelineData = [
 
 const Section3 = () => {
     return (
-        <div className=" relativ flex justify-center items-center min-h-screen">
+        <div id="exp" className=" relativ flex justify-center items-center min-h-screen">
         
           <div className="flex flex-col gap-6 px-5 mx-auto md:mt-[200px] mb-10">
             <div className="relative grid place-items-center z-20">

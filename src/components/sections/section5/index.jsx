@@ -46,12 +46,12 @@ const paragprah = "beberapa project yang pernah saya buat";
 
 const Section5 = () => {
     return (
-        <div className=" relative grid place-items-center place-content-center px-5 h-[500px]">
+        <div id="project" className=" relative grid place-items-center place-content-center px-5 h-[500px]">
           <img className="absolute z-10 md:w-[100%]" src="/resource/background/air-terjun.svg" />
           <div className="absolute z-20 ">
             <div className="relative grid place-items-center z-20">
               <ShinyText text={tittle} disabled={false} speed={3} className='font-tittle text-3xl text-center md:text-6xl' />
-              <h2 className=" text-md text-white mx-20 text-center md:text-3xl mb-6">{paragprah}</h2>
+              <h2 className=" text-md text-white mx-20 text-center md:text-3xl">{paragprah}</h2>
             </div>
             <InfiniteScroll />
           </div>

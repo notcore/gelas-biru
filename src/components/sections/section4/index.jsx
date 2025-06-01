@@ -42,7 +42,7 @@ const apps = [
 
 const Section4 = () => {
     return (
-        <div className=" relative grid place-items-center place-content-center py-12 px-5">
+        <div id="skill" className=" relative grid place-items-center place-content-center py-12 px-5">
           <div className="relative grid place-items-center z-20">
               <ShinyText text={judul} disabled={false} speed={3} className='font-tittle text-3xl text-center md:text-6xl ' />
               <h2 className=" text-md text-white mx-20 text-center md:text-3xl mb-6">{paragraph}</h2>

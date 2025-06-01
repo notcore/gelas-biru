@@ -21,7 +21,7 @@ const InfiniteScroll = () => {
 
 // kalo mau costume style disini tapi ini belum ke inti.
   return (
-    <div className="relative overflow-hidden w-screen mt-16">
+    <div className="relative overflow-hidden w-screen mt-6">
       <div className="flex animate-scroll-x">
         {items.map((item) => (
           <Glass key={`original-${item.id}`} source={`${item.source}`} className="mx-1" />

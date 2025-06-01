@@ -16,9 +16,10 @@ const Navbar = () => {
 
         {/* only on desktop and tablet */}
         <div className="hidden md:flex space-x-8">
-            <a className="text-white hover:text-gray-200">Contact</a>
-            <a className="text-white hover:text-gray-200">Business</a>
-            <a className="text-white hover:text-gray-200">Potfofolio</a>
+            <a className="text-white hover:text-gray-200" href="#aboutme">Aboute me</a>
+            <a className="text-white hover:text-gray-200" href="#exp">Exprience</a>
+            <a className="text-white hover:text-gray-200" href="#skill">Skill</a>
+            <a className="text-white hover:text-gray-200" href="#project">Project</a>
         </div>
         {/* end desktop and tablet */}
 
