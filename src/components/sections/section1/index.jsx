@@ -18,7 +18,7 @@ const Section1 = () => {
 
 
 // ===============================================================================================
-    // tiati kalo costume ntar biasanya ngerusak margin padding💀
+    // tiati kalo costume ntar ngerusak margin padding💀
 // ===============================================================================================
 
     return (

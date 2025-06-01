@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import ShinyText from "@/components/elements/ShinyText/ShinyText";
 
 // ===============================================================================================
-    //
+    // costum text disini
 // ===============================================================================================
 
 const timelineData = [
@@ -26,12 +26,28 @@ const timelineData = [
     paragraph:
       "hidup dibumi menjalani karir sebagai desainer grafis, menciptakan karya seni digital yang unik.",
   },
+  // kalo mau tambah dtinggal copy aja 
+  // {
+  //   year: "2004? — sekarang",
+  //   title: "hidup",
+  //   paragraph:
+  //     "hidup dibumi menjalani karir sebagai desainer grafis, menciptakan karya seni digital yang unik.",
+  // },
 ];
+
+// ===============================================================================================
+    // dibawah area developer //
+// ===============================================================================================
+
 
 const Section3 = () => {
     return (
-        <div className="bg-gradient-bluedark relative  flex justify-center items-center min-h-screen">
-          <div className="flex flex-col gap-6 mx-10 md:mt-[200px] mb-10">
+        <div className=" relativ flex justify-center items-center min-h-screen">
+        
+          <div className="flex flex-col gap-6 px-5 mx-auto md:mt-[200px] mb-10">
+            <div className="relative grid place-items-center z-20">
+              <ShinyText text="Exprience" disabled={false} speed={3} className='font-tittle text-3xl text-center md:text-6xl  md:mb-6' />
+            </div>
             {timelineData.map((item, index) => (
               <div
                 key={index}

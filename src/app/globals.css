@@ -52,6 +52,9 @@
     background: #2CA6E9;
     background: linear-gradient(355deg, rgba(28, 102, 201, 1) 0%, rgba(44, 166, 233, 1) 46%);
   }
+  .bg-gradient-blue {
+    background: #2CA6E9;
+  }
   .bg-transparant-blue {
     background: #2CA6E9;
     background: linear-gradient(355deg, #2ca6e9 0%, #1c66c9 46%);
