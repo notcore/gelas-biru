@@ -7,13 +7,13 @@ import Glass from "@/components/elements/Glass";
 const path = "/resource/logo/";
 
 
-// bagian judul
+// costume bagian judul
 const judul = "software skill";
 
-// bagian aragraf
+// costume bagian paragraf
 const paragraph = "masukkan text...";
 
-// bagian app
+// costume bagian app
 const apps = [
   {
     id : 1,
@@ -30,6 +30,7 @@ const apps = [
     icon: `${path}lr.png`,
     judul: "Ligtt room",
   },
+  
 ];
 
 
@@ -48,7 +49,7 @@ const Section4 = () => {
               <h2 className=" text-md text-white mx-20 text-center md:text-3xl mb-6">{paragraph}</h2>
           </div>
           <div className="">
-            <div className="flex gap-2 justify-center items-center w-max animate-scroll-x">
+            <div className="grid md:flex md:flex-wrap gap-2 justify-center items-center">
               {apps.map((app) => (
                 <Glass
                   key={app.id} 
@@ -64,51 +65,7 @@ const Section4 = () => {
                   />
                 </Glass>
               ))}
-              {apps.map((app) => (
-                <Glass
-                  key={app.id} 
-                  source={app.icon}
-                  edit="w-[50px]"
-                  className="flex p-4 gap-2 items-center"
-                >
-                  <ShinyText
-                    text={app.judul}
-                    disabled={false}
-                    speed={3}
-                    className="font-tittle mr-3 text-2xl text-center md:text-4xl"
-                  />
-                </Glass>
-              ))}
-              {apps.map((app) => (
-                <Glass
-                  key={app.id} 
-                  source={app.icon}
-                  edit="w-[50px]"
-                  className="flex p-4 gap-2 items-center"
-                >
-                  <ShinyText
-                    text={app.judul}
-                    disabled={false}
-                    speed={3}
-                    className="font-tittle mr-3 text-2xl text-center md:text-4xl"
-                  />
-                </Glass>
-              ))}
-              {apps.map((app) => (
-                <Glass
-                  key={app.id} 
-                  source={app.icon}
-                  edit="w-[50px]"
-                  className="flex p-4 gap-2 items-center"
-                >
-                  <ShinyText
-                    text={app.judul}
-                    disabled={false}
-                    speed={3}
-                    className="font-tittle mr-3 text-2xl text-center md:text-4xl"
-                  />
-                </Glass>
-              ))}
+             
             </div>
           </div>
         </div>
