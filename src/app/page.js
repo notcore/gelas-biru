@@ -9,11 +9,13 @@ import Section3 from "@/components/sections/section3";
 import Section4 from "@/components/sections/section4";
 import Section5 from "@/components/sections/section5";
 import Footer from "@/components/template/footer";
+import Alert from "@/components/template/alert";
 
 export default function Home() {
 
   return (
     <div className="flex justify-center min-h-screen">
+    <Alert pesan="dalam tahap pengembangan!" durasi={3000} />
       <Navbar />
        <div className="mt-20 overflow-hidden w-screen">
         <Section1/> 
