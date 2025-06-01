@@ -2,10 +2,10 @@ import Button from "@/components/elements/Button" ;
 import Link from 'next/link';
 
 // ===============================================================================================
-    // bebas costume navbar
+    // bebas costume NavbarBusiness
 // ===============================================================================================
 
-const Navbar = () => {
+const NavbarBusiness = () => {
     return (
     <nav className="fixed top-0 w-[100%] left-0 right-0 z-50 backdrop-blur-md border-b border-white/20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,16 +17,15 @@ const Navbar = () => {
 
         {/* only on desktop and tablet */}
         <div className="hidden md:flex space-x-8">
-            <a className="text-white hover:text-gray-200" href="#aboutme">Aboute me</a>
-            <a className="text-white hover:text-gray-200" href="#exp">Exprience</a>
-            <a className="text-white hover:text-gray-200" href="#skill">Skill</a>
-            <a className="text-white hover:text-gray-200" href="#project">Project</a>
+            <a className="text-white hover:text-gray-200" href="#aboutme">Testimoni</a>
+            <a className="text-white hover:text-gray-200" href="#exp">Tier</a>
+            <a className="text-white hover:text-gray-200" href="#skill">Contact</a>
         </div>
         {/* end desktop and tablet */}
 
         <div className="flex space-x-4">
-            <Link href="/business">
-                <Button>business</Button>
+            <Link href="/">
+                <Button>Portofolio</Button>
             </Link>
         </div>
         </div>
@@ -35,4 +34,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default NavbarBusiness;

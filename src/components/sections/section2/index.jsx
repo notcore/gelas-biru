@@ -47,7 +47,7 @@ const Section2 = () => {
            <div className="absolute -top-25 w-screen h-[100px] bg-gradient-to-t from-[#1c66c9] via-transparent to-transparent"></div>
          <div>
             <div className="relative grid place-items-center z-20">
-                <ShinyText text={tittle} disabled={false} speed={3} className='font-tittle mb-6 text-3xl text-center md:text-6xl md:mb-6' />
+                <img className="max-w-[400px] md:w-[600px] md:max-w-[600px] mx-auto" src="/resource/tittle/aboutme.svg" />
                 <h2 className=" text-md text-white mx-10 text-center md:text-3xl mb-4">{paragprah}</h2>
              <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
       {kontakList.map((item, index) => {
@@ -65,7 +65,7 @@ const Section2 = () => {
               text={item.nama}
               disabled={false}
               speed={3}
-              className="font-tittle text-2xl text-white"
+              className="font-md text-2xl text-white"
             />
           </a>
         );

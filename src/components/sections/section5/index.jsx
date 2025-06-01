@@ -50,7 +50,7 @@ const Section5 = () => {
           <img className="absolute z-10 md:w-[100%]" src="/resource/background/air-terjun.svg" />
           <div className="absolute z-20 ">
             <div className="relative grid place-items-center z-20">
-              <ShinyText text={tittle} disabled={false} speed={3} className='font-tittle text-3xl text-center md:text-6xl' />
+              <img className="max-w-[400px] md:w-[600px] md:max-w-[600px] mx-auto" src="/resource/tittle/project.svg" />
               <h2 className=" text-md text-white mx-20 text-center md:text-3xl">{paragprah}</h2>
             </div>
             <InfiniteScroll />

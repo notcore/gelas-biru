@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Glass from "@/components/elements/Glass";
 import { useEffect } from "react";

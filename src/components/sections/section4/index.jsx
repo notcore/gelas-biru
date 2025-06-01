@@ -44,7 +44,7 @@ const Section4 = () => {
     return (
         <div id="skill" className=" relative grid place-items-center place-content-center py-12 px-5">
           <div className="relative grid place-items-center z-20">
-              <ShinyText text={judul} disabled={false} speed={3} className='font-tittle text-3xl text-center md:text-6xl ' />
+              <img className="max-w-[400px] md:w-[600px] md:max-w-[600px] mx-auto" src="/resource/tittle/software.svg" />
               <h2 className=" text-md text-white mx-20 text-center md:text-3xl mb-6">{paragraph}</h2>
           </div>
           <div className="">
