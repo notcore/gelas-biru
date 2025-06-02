@@ -75,7 +75,7 @@ const Tier = () => {
       </li>
     </ul>
 
-<Link href="https://contoh.com" className="w-full" target="_blank" rel="noopener noreferrer">
+<Link href="https://contoh.com" className="w-full">
 <button type="button" className="button w-full bg-gradient-darkblue">
   <span className="fold"></span>
 
