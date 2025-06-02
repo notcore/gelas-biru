@@ -1,32 +1,15 @@
-const Produk = () => {
+const Produk = ({children, tittle , paragraph}) => {
     return (
-        <>
-<article className="card shadow-md ">
-  <section className="card__hero w-[250px] overflow-hidden h-[200px]">
-    <header className="card__hero-header">
-      <span>Rp.50.000</span>
-      <div className="card__icon">
-      </div>
-    </header>
+    <>
+      <div className="p-3 a border-1 border-black/20 bg-white rounded-lg min-h-[200px] max-h-[200px] flex justify-center items-center max-w-[200px] min-w-[200px]">
+      <div>
 
-    <img src="/resource/img/motion.gif" className="-ml-5 object-cover"></img>
-  </section>
-
-  <footer className="card__footer">
-    <div className="card__job-summary">
-      <div className="card__job-icon">
-       <img src="/resource/logo/azero.png" className="bg-gradient-darkblue w-[20px] h-[20px] rounded-full"/>
+        {children}        
+        <h1 className="text-xl mt-2 text-center font-tittle">{tittle}</h1>
+        <h1 className="text-black text-center text-xs leading-tight mb-4">{paragraph}</h1>
       </div>
-      <div className="card__job">
-        <p className="card__job-title">
-            azero
-        </p>
       </div>
-    </div>
-  </footer>
-</article>
-
-</>
+    </>
     )
 }
 

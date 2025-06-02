@@ -2,10 +2,12 @@
     //! JANGAN HILANGIN ${children} KALO MAU COSTUME
 // ===============================================================================================
 
-export default function Button ({ children }) {
+export default function Button ({ 
+    children, 
+    className = "a" }) {
     return ( 
         <button
-        className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-white/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-sm hover:shadow-white/50 border border-white/20"
+        className={`group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-white/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-sm hover:shadow-white/50 border ${className} border-white/20`}
         >
             <span className="text-lg">{ children }</span>
             <div

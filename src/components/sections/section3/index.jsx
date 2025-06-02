@@ -42,39 +42,35 @@ const timelineData = [
 
 const Section3 = () => {
     return (
-<div id="exp" className="relative flex justify-center items-center min-h-screen">
-  <div className="flex flex-col gap-6 px-5 mx-auto mb-10 xl:ml-[50vw] xl:w-[50vw]">
-    <div className="relative grid place-items-center z-20 md:mt-[200px]">
-      <img
-        className="max-w-[400px] md:w-[600px] xl:-ml-20 md:max-w-[600px] mx-auto"
-        src="/resource/tittle/exp.svg"
-      />
-    </div>
-
-    {timelineData.map((item, index) => (
-      <div
-        key={index}
-        className="flex xl:-ml-20 lg:mx-0 flex-col sm:flex-row sm:items-start gap-4"
-      >
-        <div className="text-xs text-white font-mono sm:w-28 flex-shrink-0">
-          {item.year}
+        <div id="exp" className=" relativ flex justify-center items-center min-h-screen">
+        
+          <div className="flex flex-col  gap-6 px-5 mx-auto md:mt-[200px] mb-10">
+            <div className="relative grid place-items-center z-20">
+              <img className="max-w-[400px] md:w-[600px] md:max-w-[600px] mx-auto" src="/resource/tittle/exp.svg" />
+            </div>
+            {timelineData.map((item, index) => (
+              <div
+                key={index}
+                className="flex lg:mx-30 flex-col sm:flex-row sm:items-start gap-4"
+              >
+                <div className="text-xs text-white font-mono sm:w-28 flex-shrink-0">
+                  {item.year}
+                </div>
+                <div className="flex-1 border-l-2 border-white pl-5">
+                  <ShinyText
+                    text={item.title}
+                    disabled={false}
+                    speed={3}
+                    className="font-tittle text-3xl text-start md:text-6xl md:mb-6"
+                  />
+                  <p className="text-md text-white mt-1 max-w-3xl">
+                    {item.paragraph}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex-1 border-l-2 border-white pl-5">
-          <ShinyText
-            text={item.title}
-            disabled={false}
-            speed={3}
-            className="font-tittle text-3xl text-start md:text-6xl md:mb-6"
-          />
-          <p className="text-md text-white mt-1 max-w-3xl">
-            {item.paragraph}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-
     )
 }
 //  bg-gradient-to-t from-[1c66c9] via-[#2ca6e9]/50 to-transaparant

@@ -43,51 +43,38 @@ const kontakList = [
 
 const Section2 = () => {
     return (
-<div id="aboutme" className="bg-darkblue relative pt-46 mb-16">
-  {/* Background gradasi atas */}
-  <div className="absolute -top-25 w-screen h-[100px] bg-gradient-to-t from-[#1c66c9] via-transparent to-transparent"></div>
-
-  {/* Isi konten geser ke kanan pas XL */}
-  <div className="grid grid-cols-1 justify-center items-center px-4 xl:ml-[50vw] xl:w-[50vw]">
-    <div className="relative grid place-items-center z-20">
-      <img
-        className="max-w-[400px] md:w-[600px] xl:-ml-20 md:max-w-[600px] mx-auto"
-        src="/resource/tittle/aboutme.svg"
-      />
-      <h2 className="text-md text-white mx-10 text-center xl:-ml-20 xl:text-start md:mx-40 md:text-3xl mb-4">
-        {paragprah}
-      </h2>
-
-      {/* <div className="grid lg:grid-cols-3 grid-cols-1 xl:direction-rtl w-full">
-        {kontakList.map((item, index) => {
-          const Icon = item.icon;
-          return (
-            <a
-              key={index}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 group"
-            >
-              <Icon
-                width={40}
-                height={40}
-                className="text-white group-hover:text-indigo-500 transition"
-              />
-              <ShinyText
-                text={item.nama}
-                disabled={false}
-                speed={3}
-                className="font-md text-2xl text-white"
-              />
-            </a>
-          );
-        })}
-      </div> */}
+        <div id="aboutme" className="bg-darkblue relative pt-46 mb-16 flex justify-center items-center ">
+           <div className="absolute  -top-25 w-screen h-[100px] bg-gradient-to-t from-[#1c66c9] via-transparent to-transparent"></div>
+         <div>
+            <div className="relative grid place-items-center z-20">
+                <img className="max-w-[400px] md:w-[600px] md:max-w-[600px] mx-auto" src="/resource/tittle/aboutme.svg" />
+                <h2 className=" text-md text-white mx-10 text-center md:text-3xl lg:mx-30 mb-4">{paragprah}</h2>
+             <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
+      {kontakList.map((item, index) => {
+        const Icon = item.icon;
+        return (
+          <a
+            key={index}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 group"
+          >
+            <Icon width={40} height={40} className="text-white group-hover:text-indigo-500 transition" />
+            <ShinyText
+              text={item.nama}
+              disabled={false}
+              speed={3}
+              className="font-md text-2xl text-white"
+            />
+          </a>
+        );
+      })}
     </div>
-  </div>
-</div>
-
+            </div>
+            
+         </div>
+        </div>
     )
 }
 //  bg-gradient-to-t from-[1c66c9] via-[#2ca6e9]/50 to-transaparant
