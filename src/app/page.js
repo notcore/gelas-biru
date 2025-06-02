@@ -10,8 +10,8 @@ import Section4 from "@/components/sections/section4";
 import Section5 from "@/components/sections/section5";
 import Footer from "@/components/template/footer";
 import Alert from "@/components/template/alert";
-import ScrollLogger from "@/components/tools/debugframe";
-import TrackMouse from "@/components/tools/TrackMouse";
+// import ScrollLogger from "@/components/tools/debugframe";
+// import TrackMouse from "@/components/tools/TrackMouse";
 
 export default function Home() {
 
